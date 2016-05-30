@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+//see https://blog.bracelab.com/achieving-perfect-ssl-labs-score-with-go
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
